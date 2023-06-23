@@ -5,6 +5,7 @@ import { Listings } from "../models/Listings";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useNavigate } from "react-router-dom";
 import Spinner from "./Spinner";
+import "swiper/swiper-bundle.css";
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
@@ -48,7 +49,11 @@ const Slider = () => {
     <>
       <p className="exploreHeading">Recommended</p>
 
-      <Swiper slidesPerView={1} pagination={{ clickable: true }}>
+      <Swiper
+        slidesPerView={1}
+        pagination={{ clickable: true }}
+        className="swiper-container"
+      >
         {listings.map(({ data, id }) => (
           <SwiperSlide
             key={id}
