@@ -165,6 +165,44 @@ a {
   margin-top: 2rem;
 }
 
+.categoryListingDetails {
+  width: 65%;
+}
+
+.categoryListingLocation {
+  font-weight: 600;
+  font-size: 0.7rem;
+  opacity: 0.8;
+  margin-bottom: 0;
+}
+
+.categoryListingName {
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.categoryListingPrice {
+  margin-top: 0.5rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #00cc66;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+}
+
+.categoryListingInfoDiv {
+  display: flex;
+  justify-content: space-between;
+  max-width: 275px;
+}
+
+.categoryListingInfoText {
+  font-weight: 500;
+  font-size: 0.7rem;
+}
+
 @media (min-width: 1024px) {
   .swiperSlideText {
     font-size: 1.75rem;
@@ -177,5 +215,9 @@ a {
   .categoryListingImg {
     width: 19%;
     height: 217px;
+  }
+
+  .categoryListingDetails {
+    width: 79%;
   }
 }
