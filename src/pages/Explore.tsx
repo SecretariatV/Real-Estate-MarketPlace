@@ -10,7 +10,7 @@ const Explore = () => {
         <p className="pageHeader">Explore</p>
       </header>
       <main>
-        {/* <Slider /> */}
+        <Slider />
         <p className="exploreCategoryHeading">Categories</p>
         <div className="exploreCategories">
           <Link to={"/category/rent"}>
